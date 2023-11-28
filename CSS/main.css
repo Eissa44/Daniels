@@ -1,0 +1,493 @@
+/* START GENERAL STYLE */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a,
+span {
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.main-head-sections {
+  position: relative;
+  text-align: center;
+  z-index: 999;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+  color: var(--mainColor);
+}
+
+.main-head-sections::after {
+  content: "";
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  width: 20%;
+  height: 80%;
+  bottom: -6px;
+  left: 40%;
+  z-index: -3;
+}
+
+:root {
+  --mainColor: #343434;
+  --secondColor: #fff;
+  --bgColor: #f7f7f7;
+  --mainwidth: 90%;
+}
+/* END GENERAL STYLE */
+
+/* START OF NAV */
+#Eissa .nav-link {
+  position: relative;
+  color: black;
+  font-weight: bold;
+}
+
+#Eissa .navbar-toggler,
+#Eissa .navbar-toggler-icon {
+  border-color: var(--secondColor);
+}
+
+#Eissa .navbar-nav .nav-link.active,
+#Eissa .navbar-nav .nav-link.show {
+  color: #fff;
+  font-weight: bold;
+}
+
+#Eissa .logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+}
+
+#Eissa .nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--secondColor);
+  transition: all 0.7s;
+}
+
+#Eissa .nav-link a:hover::before {
+  width: 5px;
+}
+
+#Eissa ul > * {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  padding-top: 3px;
+}
+/* END OF NAV */
+
+/* START OF HEADEDR */
+#home {
+  background-image: linear-gradient(#000000bb, #000000a9), url(../imgs/bg.jpg);
+  background-size: cover;
+  padding: 1.5rem;
+  height: 100vh;
+}
+
+#home .text-header h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.125rem;
+  line-height: 3.4375rem;
+  font-weight: 800;
+}
+
+#home .text-header p,
+#home .text-header span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.75rem;
+  line-height: 4.5rem;
+}
+
+#home .text-header p {
+  font-weight: 200;
+}
+
+#home .text-header span {
+  font-weight: 400;
+}
+/* END OF HEADEDR */
+
+/* START OF ABOUT */
+#about .image-div::after {
+  content: "";
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: -8%;
+  top: 26%;
+  z-index: -2;
+}
+
+#about .hero-img {
+  width: 96%;
+}
+
+#about .hero-text h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.875rem;
+  line-height: 2.0625rem;
+  font-weight: 800;
+  color: var(--mainColor);
+}
+
+#about .hero-text .hero-des {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: #999;
+}
+
+#about .hero-text .hero-info {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.94rem;
+  line-height: 1.625rem;
+  font-weight: 400;
+  color: #748182;
+}
+
+.progress,
+.progress-stacked {
+  color: var(--mainColor);
+}
+
+#about .progress-bar::after {
+  position: absolute;
+  left: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8125rem;
+  line-height: 0.875rem;
+  font-weight: 500;
+}
+
+#about .progress-bar::before {
+  position: absolute;
+  left: 90%;
+}
+
+#about .progress-bar-one::after {
+  content: "Web Design";
+}
+
+#about .progress-bar-one::before {
+  content: "95%";
+}
+
+#about .progress-bar-two::after {
+  content: "Branding";
+}
+#about .progress-bar-two::before {
+  content: "80%";
+}
+
+#about .progress-bar-three::after {
+  content: "Development";
+}
+#about .progress-bar-three::before {
+  content: "90%";
+}
+
+#about .btn-one,
+#about .btn-two {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.1875rem;
+  font-weight: 400;
+  padding-inline: 1.1rem;
+  transition: all 0.5s;
+}
+#about .btn-one {
+  background-color: var(--mainColor);
+  color: var(--secondColor);
+}
+
+#about .btn-one:hover {
+  background-color: var(--secondColor);
+  color: var(--mainColor);
+}
+
+#about .btn-two {
+  background-color: var(--secondColor);
+  color: var(--mainColor);
+}
+
+#about .btn-two:hover {
+  background-color: var(--mainColor);
+  color: var(--secondColor);
+}
+
+/* END OF ABOUT */
+
+/* START OF SERVICES */
+#services {
+  background-color: var(--bgColor);
+  padding-block: 5rem;
+}
+
+.icon-services i {
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  transition: all 0.5s;
+}
+
+#services .service:hover i {
+  background-color: black;
+  color: #f4f4f4;
+}
+
+#services .head-sev {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  font-weight: 800;
+  color: var(--mainColor);
+}
+
+#services .p-sev {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 400;
+  color: #748182;
+}
+/* END OF SERVICES */
+
+/* START OF PORTFOLIO  */
+#work {
+  padding-top: 5rem;
+}
+
+#work .port-nav .nav-link {
+  color: #222;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  font-weight: 700;
+  position: relative;
+}
+
+#work .item-img {
+  position: relative;
+  overflow: hidden;
+}
+
+#work .item-img img {
+  width: 100%;
+  height: auto;
+}
+
+#work .item-shadow {
+  background: rgba(255, 255, 255, 0.842);
+  position: absolute;
+  top: 1px;
+  left: 5px;
+  right: 5px;
+  bottom: 20px;
+  z-index: 22;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#work .item-img:hover .item-shadow {
+  opacity: 1;
+}
+
+#work .item-info h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  line-height: 0.8125rem;
+  font-weight: 700;
+  color: var(--mainColor);
+}
+
+#work .shadow-icons a i {
+  background-color: var(--mainColor);
+  color: var(--secondColor);
+}
+/* END OF PORTFOLIO  */
+
+/* START OF TESTMONIALS */
+#clients {
+  background-color: var(--bgColor);
+}
+
+#clients .img-test {
+  width: 8%;
+}
+
+#clients .p-test {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.375rem;
+  font-weight: 400;
+  color: #748182;
+  padding-inline: 5rem;
+}
+#clients .head-test {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 600;
+  color: var(--mainColor);
+}
+#clients .sp-test {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.375rem;
+  font-weight: 400;
+  color: #888;
+}
+#clients .carousel-indicators button {
+  background-color: var(--mainColor);
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+#review {
+  background-color: var(--secondColor);
+}
+/* END OF TESTMONIALS */
+
+/* START OF TEAM */
+#team {
+  background-color: var(--bgColor);
+  padding-top: 6rem;
+}
+
+#team .team-img img {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+#team .social {
+  background-color: rgba(255, 255, 255, 0.781);
+  position: absolute;
+  text-align: center;
+  inset: 5px;
+  opacity: 0;
+  transition: all 0.5s;
+  transform: rotateY(180deg) scale(0.5, 0.5);
+}
+
+#team .team-img:hover .social {
+  opacity: 1;
+  transform: rotateY(350deg);
+}
+
+#team .team-img:hover img {
+  transform: scale(1.2, 1.2);
+}
+
+.team-img .social li a i {
+  background-color: var(--mainColor);
+  color: var(--secondColor);
+  border: #343434 solid 1px;
+  transition: all 0.5s;
+}
+
+.team-img .social li:hover i {
+  color: var(--mainColor);
+  background-color: inherit;
+}
+
+#team .team-text h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5625rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+#team .team-text h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.375rem;
+  font-weight: 700;
+}
+/* END OF TEAM */
+
+/* START OF CONTACT */
+#contact .contact-text i {
+  background-color: var(--bgColor);
+  padding: 1.6rem;
+  transition: all 0.5s;
+}
+
+#contact .contact-text:hover i {
+  background-color: #343434;
+  color: #fff;
+}
+
+#contact .contact-text h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 700;
+  color: var(--mainColor);
+}
+#contact .contact-text p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.375rem;
+  font-weight: 400;
+  color: #748182;
+}
+
+#contact .control .form-control {
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  background: #f4f4f4;
+  box-shadow: none;
+}
+
+#contact .control button {
+  background-color: var(--mainColor);
+  color: var(--secondColor);
+}
+
+#contact .control button:hover {
+  background-color: var(--secondColor);
+  color: #748182;
+}
+/* END OF CONTACT */
+/* START OF FOOTER */
+footer .content {
+  background-color: #1c1c1c;
+  color: #748182;
+}
+/* END OF FOOTER */
